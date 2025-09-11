@@ -9,7 +9,7 @@ Kami menyadari bahwa privasi Anda sangat penting, untuk itu kami berusaha menuli
 
 ### Informasi apa yang kami kumpulkan?
 
-Kami mengumpulkan informasi dari Anda ketika Anda melakukan login untuk memberikan komentar, pengisian form kontak kami, mengikuti kegiatan-kegiatan yang diselenggarakan ataupun pengumpulan informasi lainnya. Saat mengisi data di situs Octocat Code, sebagaimana mestinya, Anda mungkin akan diminta untuk memasukkan: nama, alamat e-mail, alamat tempat tinggal, nomor telepon atau akun jejaring sosial. Anda juga dapat mengunjungi situs kami secara anonim (tidak dikenal).
+Kami mengumpulkan informasi dari Anda ketika Anda melakukan login untuk memberikan komentar, pengisian form kontak kami, mengikuti kegiatan-kegiatan yang diselenggarakan ataupun pengumpulan informasi lainnya. Saat mengisi data di situs Absolute Computer, sebagaimana mestinya, Anda mungkin akan diminta untuk memasukkan: nama, alamat e-mail, alamat tempat tinggal, nomor telepon atau akun jejaring sosial. Anda juga dapat mengunjungi situs kami secara anonim (tidak dikenal).
 
 Selain itu, kami juga melakukan pencatatan informasi ke dalam sistem kami. Informasi yang dicatat pada umumnya meliputi alamat protokol internet (IP Address), jenis browser, Internet Service Provider (ISP), tanggal/waktu, referrer, jumlah klik, informasi demografis dan informasi lainnya.
 
@@ -44,7 +44,7 @@ Silakan juga kunjungi Syarat dan Ketentuan, menetapkan penggunaan, penolakan, da
 
 ### Izin Anda
 
-Dengan mengakses situs Octocat Code, Anda telah menyetujui kebijakan privasi website kami.
+Dengan mengakses situs Absolute Computer, Anda telah menyetujui kebijakan privasi website kami.
 
 ### Hubungi Kami
 

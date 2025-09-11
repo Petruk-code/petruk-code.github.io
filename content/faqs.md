@@ -17,4 +17,4 @@ Tidak, semua konten di situs ini sepenuhnya gratis.
 Anda dapat berkontribusi melalui GitHub repository kami. Silakan kunjungi halaman kontak untuk informasi lebih lanjut.
 
 - GitHub: github.com/ocatacat
-- Discord: discord.gg/ocatacat
+- Discord: https://discord.gg/ux2JDWF7

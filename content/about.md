@@ -1,5 +1,5 @@
 ---
-title: "Tentang Kami - Ocatocat Kode"
+title: "Tentang Kami - Absolute Comp"
 date: 2025-06-27
 layout: "single"
 type: "page"
@@ -10,7 +10,7 @@ meta_description: "Kenali tim Ocatacat Kode - platform edukasi teknologi yang me
 
 Payung Kode adalah platform edukasi teknologi yang didedikasikan untuk membantu developer dari berbagai tingkat keahlian - dari pemula yang baru memulai perjalanan coding hingga profesional yang ingin mengasah skills terbaru.
 
-![Tim Payung Kode](/images/authors/octocat.png)
+![Tim Absolute Comp](/images/authors/octocat.png)
 
 ## 🎯 Visi Kami
 
