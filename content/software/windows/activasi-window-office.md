@@ -6,6 +6,7 @@ versi: "V3.5"
 platform: "Windows"
 size: "138Mb"
 link: "https://git.activated.win/massgrave/Microsoft-Activation-Scripts/archive/master.zip"
+link_alt: "#"
 cover: "/images/thumbnail/blog_card.png"
 image: "/images/cover/mas.png"
 date: 2023-01-15

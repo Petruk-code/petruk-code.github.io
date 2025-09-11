@@ -6,6 +6,7 @@ versi: "Lite Full Pack 12.3.0.2301"
 platform: "Windows"
 size: "55mb"
 link: "https://www.mediafire.com/file/05j05cyvjb6pp0d/DTLite1230-2301.kuyhAa.rar/file"
+link_alt: "#"
 cover: "/images/content/buku/daemon-tools.png"
 image: "/images/content/buku/daemon-tools.png"
 date: 2023-01-15

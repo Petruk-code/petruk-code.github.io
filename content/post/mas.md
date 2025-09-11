@@ -1,5 +1,5 @@
 ---
-title: "Bagaimana cara mengaktifkan Windows/Office?"
+title: "Aktifkan Windows/Office?"
 linkTitle: "Bagaimana cara mengaktifkan Windows/Office?"
 date: 2025-06-25
 author: "default"

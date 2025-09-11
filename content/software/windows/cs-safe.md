@@ -6,6 +6,7 @@ versi: "SAFE 22.7.0.3220 Full"
 platform: "Windows"
 size: "821 Mb"
 link: "https://www.mediafire.com/file/kbz5r3ej63nr2y2/CSI.SAFE.v22.7.0.kuyhAa.7z/file"
+link_alt: "#"
 cover: "/images/content/buku/SAFE_v2200.png"
 image: "/images/content/buku/SAFE_v2200.png"
 date: 2023-01-15

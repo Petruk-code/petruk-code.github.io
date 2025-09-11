@@ -6,6 +6,7 @@ versi: "IDM 6.4.2 Full"
 platform: "Windows"
 size: "55mb"
 link: "https://www.mediafire.com/file/q59rzqz6czc6rob/IDMan.6.42.42.Portable.kuyhAa.7z/file"
+link_alt: "#"
 cover: "/images/content/buku/idm-portable.png"
 image: "/images/content/buku/idm-portable.png"
 date: 2023-01-15

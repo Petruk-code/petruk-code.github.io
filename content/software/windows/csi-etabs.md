@@ -6,6 +6,7 @@ versi: "Ultimate 22.7.0.4095 Full"
 platform: "Windows"
 size: "968 Mb"
 link: "https://www.mediafire.com/file/zmbm34wqeu42b4d/CSI.ETABS.v22.7.0.kuyhAa.7z/file"
+link_alt: "#"
 cover: "/images/content/buku/csi-etabs-ultimate.png"
 image: "/images/content/buku/csi-etabs-ultimate.png"
 date: 2023-01-15

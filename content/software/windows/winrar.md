@@ -6,6 +6,7 @@ versi: "WinRAR 7.13"
 platform: "Windows"
 size: "55mb"
 link: "https://gofile.io/d/t6l3QA"
+link_alt: "#"
 cover: "/images/content/buku/winrar.png"
 image: "/images/content/buku/winrar.png"
 date: 2023-01-15

@@ -1,5 +1,5 @@
 ---
-title: "Cara Diable Update Otomatis (Windows 10 & 11)"
+title: "Disable Update Otomatis (Windows 10 & 11)"
 linkTitle: "Tutorial Windows #03: Diable Update Otomatis"
 author: "default"
 date: 2025-06-25

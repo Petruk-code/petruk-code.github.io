@@ -6,6 +6,7 @@ versi: "Stata MP 17"
 platform: "Windows"
 size: "55mb"
 link: "https://mega.nz/file/dx4WyB6b#zzWjBmFLIfQV2bv7YSf3jtUxPxEQ0GV9rxRMwqAO8Dc"
+link_alt: "https://www.mediafire.com/file/nkftc8fzoamk568/Stata_MP_17_Baru-20250911T042354Z-1-001.zip/file"
 cover: "/images/content/buku/stata-17.webp"
 image: "/images/content/buku/stata-17.webp"
 date: 2023-01-15
@@ -13,7 +14,7 @@ layout: "single-buku"
 draft: false
 ---
 
-Hallo sobat Bisariset! Kali ini kita akan bahas cara install Stata MP 17 nih! Sebelumnya kita bahas dulu yuk, aplikasi Stata tuh apa sih dan fungsinya buat apaa ya? 
+Hallo sobat Cleanic Computer! Kali ini kita akan bahas cara install Stata MP 17 nih! Sebelumnya kita bahas dulu yuk, aplikasi Stata tuh apa sih dan fungsinya buat apaa ya? 
 
 Jadi, sedikit info aja, Stata adalah salah satu program statistik yan bisa melakukan banyak perintah dan pengolahan data. Secara umum, Stata berfungsi untuk mengolah data, mengorganisasi data, dan juga menampilkan output pengolahan data baik untuk penelitian kualitatif dan kuantitatif. Stata biasanya digunakan untuk mengolah data dan menunjukan hubungan antara dua variabel penelitian atau lebih menggunakan berbagai macam metode regresi atau statistik lainnya. Jadi, untuk kalian yang sedang melakukan atau belajar tentang penelitian bisa banget nih baca artikel ini agar bisa download dan Install Stata nya! 
 
