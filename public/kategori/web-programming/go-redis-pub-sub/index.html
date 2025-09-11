@@ -9,9 +9,9 @@
 <meta name="description" content="">
 
 
-<link rel="icon" type="image/png" href="/icons/app-icons/favicon.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="/icons/app-icons/favicon.png">
-<link rel="shortcut icon" href="/icons/app-icons/favicon.png">
+<link rel="icon" type="image/png" href="/icons/app-icons/navbar-icon.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/icons/app-icons/navbar-icon.png">
+<link rel="shortcut icon" href="/icons/app-icons/navbar-icon.png">
 <link rel="apple-touch-icon" href="/icons/app-icons/apple-touch-icon.png" sizes="180x180">
 <link rel="manifest" href="/site.webmanifest">
 
@@ -69,7 +69,7 @@
   <div class="container mx-auto px-4 lg:max-w-7xl flex justify-between">
     <div class="flex flex-row gap-1 items-center py-3 md:py-2">
       <a class="inline-block mr-2" href="https://gitkodachi.github.io/" aria-label="Go to home">
-        <img src="/images/icons/app-icons/navbar-icon.png" alt="Logo" class="w-8 h-8 active:scale-95">
+        <img src="/images/global/navbar-icon.png" alt="Logo" class="w-8 h-8 active:scale-95">
       </a>
       <a href="https://gitkodachi.github.io/"
         class="hidden md:inline-flex items-center gap-1 px-3 py-2 rounded-lg font-medium text-gray-100 hover:bg-teal-700 focus:ring-2 focus:ring-teal-500">
@@ -376,7 +376,7 @@
             </svg>
           </a>
         </div>
-        <p class=text-xs>Copyright &copy; 2025 <a href="https://gitkodachi.github.io/" class=hover:text-teal-400><strong>Code Craft</strong></a></p>
+        <p class=text-xs>Copyright &copy; 2025 <a href="https://gitkodachi.github.io/" class=hover:text-teal-400><strong>Cleanic Computer</strong></a></p>
       </footer>
     </div>
   </aside>
@@ -471,9 +471,9 @@
           <img src="http://localhost:1313/images/authors/octocat.png" 
               class="rounded-full inline h-6 w-6" 
               width="24" height="24" 
-              alt="Tim Octocat Kode">
+              alt="Tim Cleanic Computer">
           <a class="text-dark dark:text-slate-100" href="/about/">
-            Tim Octocat Kode
+            Tim Cleanic Computer
           </a>
           <time datetime="2023-06-25T00:00:00Z" 
                 title="Ditulis pada 2023-06-25 00:00:00 &#43;0000" 
@@ -630,8 +630,8 @@
 <p>Pertama, buat folder bernama pubsub-go atau bebas terserah anda Buka Terminal atau CMD, lalu ketik perintah ini:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir pubsub-go
 </span></span></code></pre></div><p>Setelah itu, masuk ke folder tersebut dengan cd dan lakukan inisialisasi project Golang. Ketik perintah ini:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span> <span class="nx">mod</span> <span class="nx">init</span> <span class="nx">pub</span><span class="o">-</span><span class="nx">sub</span><span class="o">-</span><span class="k">go</span>
-</span></span></code></pre></div><p>Perintah ini akan membuat file baru dengan nama <code>go.mod</code> dan <code>go.sum</code> yang merupakan file untuk menyimpan data project dan dependency yang dibutuhkan.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span><span class="w"> </span><span class="nx">mod</span><span class="w"> </span><span class="nx">init</span><span class="w"> </span><span class="nx">pub</span><span class="o">-</span><span class="nx">sub</span><span class="o">-</span><span class="k">go</span><span class="w">
+</span></span></span></code></pre></div><p>Perintah ini akan membuat file baru dengan nama <code>go.mod</code> dan <code>go.sum</code> yang merupakan file untuk menyimpan data project dan dependency yang dibutuhkan.</p>
 <h3 id="install-dependency-yang-dibutuhkan">Install dependency yang dibutuhkan</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go get -u github.com/gofiber/fiber/v2
 </span></span><span class="line"><span class="cl">go get -u github.com/gofiber/template/html/v2
@@ -833,18 +833,18 @@ body {
 </li>
 </ul>
 <p>Oke, kita lanjut dengan membuat file baru di root direktori dengan nama <code>docker-compose.yml</code> dan isi dengan kode berikut:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">version</span><span class="p">:</span> <span class="s">&#34;3.9&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">services</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">redis</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">image</span><span class="p">:</span> <span class="nx">redis</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">container_name</span><span class="p">:</span> <span class="nx">pubsubgo</span><span class="o">-</span><span class="nx">redis</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">ports</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">     <span class="o">-</span> <span class="mi">6379</span><span class="p">:</span><span class="mi">6379</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">volumes</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">     <span class="o">-</span> <span class="p">.</span><span class="o">/</span><span class="nx">_docker</span><span class="o">-</span><span class="nx">data</span><span class="o">/</span><span class="nx">redis</span><span class="p">:</span><span class="o">/</span><span class="nx">data</span>
-</span></span></code></pre></div><p>Ini adalah konfigurasi untuk menjalankan service Redis dengan Docker compose. Volume nya sengaja di taruh pada direktori <code>_docker-data</code> (terdapat underscore pada awal penamaan) untuk menghindari direktori nya terdeteksi sebagai bagian dari project Golang.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#34;3.9&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nx">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">redis</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">image</span><span class="p">:</span><span class="w"> </span><span class="nx">redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">container_name</span><span class="p">:</span><span class="w"> </span><span class="nx">pubsubgo</span><span class="o">-</span><span class="nx">redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="o">-</span><span class="w"> </span><span class="mi">6379</span><span class="p">:</span><span class="mi">6379</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="o">-</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="nx">_docker</span><span class="o">-</span><span class="nx">data</span><span class="o">/</span><span class="nx">redis</span><span class="p">:</span><span class="o">/</span><span class="nx">data</span><span class="w">
+</span></span></span></code></pre></div><p>Ini adalah konfigurasi untuk menjalankan service Redis dengan Docker compose. Volume nya sengaja di taruh pada direktori <code>_docker-data</code> (terdapat underscore pada awal penamaan) untuk menghindari direktori nya terdeteksi sebagai bagian dari project Golang.</p>
 
 <figure class="my-6 text-center">
   <img 
@@ -1030,89 +1030,89 @@ body {
 </span></span></code></pre></div><p>Sekarang kita bisa mengakses Redis pada port <code>6379</code></p>
 <h2 id="step-3---menyambungkan-aplikasi-dengan-redis">Step 3 - Menyambungkan aplikasi dengan Redis</h2>
 <p>Buka file <code>configs/redis.go</code>, kemudian isi dengan kode berikut:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">configs</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;context&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;github.com/redis/go-redis/v9&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">REDIS_CHANNEL_NOTIFICATION</span> <span class="p">=</span> <span class="s">`notification`</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">RDS</span> <span class="o">*</span><span class="nx">redis</span><span class="p">.</span><span class="nx">Client</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">RDS_CTX</span> <span class="nx">context</span><span class="p">.</span><span class="nx">Context</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">InitRedisClient</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">RDS_CTX</span> <span class="p">=</span> <span class="nx">context</span><span class="p">.</span><span class="nf">Background</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">RDS</span> <span class="p">=</span> <span class="nx">redis</span><span class="p">.</span><span class="nf">NewClient</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">redis</span><span class="p">.</span><span class="nx">Options</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">Addr</span><span class="p">:</span> <span class="s">`localhost:6379`</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">Password</span><span class="p">:</span> <span class="s">``</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">DB</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="p">})</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Kode di atas berfungsi untuk mengkoneksikan Redis pada host/port <code>localhost:6379</code> dan pada database nomor 0, kemudian koneksi tersebut disimpan pada variabel <code>var RDS *redis.Client</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">configs</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;context&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;github.com/redis/go-redis/v9&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">const</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">REDIS_CHANNEL_NOTIFICATION</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">`notification`</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">var</span><span class="w"> </span><span class="nx">RDS</span><span class="w"> </span><span class="o">*</span><span class="nx">redis</span><span class="p">.</span><span class="nx">Client</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">var</span><span class="w"> </span><span class="nx">RDS_CTX</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nx">Context</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">InitRedisClient</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">RDS_CTX</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nf">Background</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">RDS</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">redis</span><span class="p">.</span><span class="nf">NewClient</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">redis</span><span class="p">.</span><span class="nx">Options</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">Addr</span><span class="p">:</span><span class="w"> </span><span class="s">`localhost:6379`</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">Password</span><span class="p">:</span><span class="w"> </span><span class="s">``</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">DB</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Kode di atas berfungsi untuk mengkoneksikan Redis pada host/port <code>localhost:6379</code> dan pada database nomor 0, kemudian koneksi tersebut disimpan pada variabel <code>var RDS *redis.Client</code>.</p>
 <p>Kalau sudah, lanjut kita tes koneksinya dengan memanggil fungsi tersebut di <code>main.go</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;fmt&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;pub-sub-go/configs&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">configs</span><span class="p">.</span><span class="nf">InitRedisClient</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Ping</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">).</span><span class="nf">Err</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`failed to connect redis`</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`connect to redis successfully !`</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Kemudian jalankan dengan perintah berikut:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span> <span class="nx">run</span> <span class="nx">main</span><span class="p">.</span><span class="k">go</span>
-</span></span></code></pre></div><p>Jika muncul pesan connect to redis successfully !, maka aplikasi berhasil terhubung ke Redis.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;pub-sub-go/configs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nf">InitRedisClient</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Ping</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">).</span><span class="nf">Err</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`failed to connect redis`</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`connect to redis successfully !`</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Kemudian jalankan dengan perintah berikut:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="k">go</span><span class="w">
+</span></span></span></code></pre></div><p>Jika muncul pesan connect to redis successfully !, maka aplikasi berhasil terhubung ke Redis.</p>
 <h2 id="step-4---membuat-controller">Step 4 - Membuat controller</h2>
 <p>Kita akan membuat 2 route/endpoint yang mana 1 route untuk menampilkan halaman web, dan 1 nya lagi untuk menerima notifikasi secara real-time dengan metode Server-Sent Event.</p>
 <p>Kedua endpoint yang kita buat akan mengimplementasikan fitur Pub/Sub pada Redis.</p>
 <p>Tulis kode berikut pada file <code>main.go</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;log&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;pub-sub-go/configs&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;pub-sub-go/controller&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;github.com/gofiber/fiber/v2&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;github.com/gofiber/template/html/v2&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">configs</span><span class="p">.</span><span class="nf">InitRedisClient</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Ping</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">).</span><span class="nf">Err</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`failed to connect redis`</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="nx">engine</span> <span class="o">:=</span> <span class="nx">html</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="s">`./views`</span><span class="p">,</span> <span class="s">`.html`</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">app</span> <span class="o">:=</span> <span class="nx">fiber</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">Views</span><span class="p">:</span> <span class="nx">engine</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="p">})</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="nx">app</span><span class="p">.</span><span class="nf">Listen</span><span class="p">(</span><span class="s">`:8080`</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Pada variable <code>engine := html.New</code>(<code>./views</code>, <code>.html</code>) berguna untuk mengkonfigurasi direktori dan ekstensi file untuk me-render halaman web. Pada kasus ini kita gunakan direktori ./views dan ekstensi .html.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;log&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;pub-sub-go/configs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;pub-sub-go/controller&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;github.com/gofiber/fiber/v2&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;github.com/gofiber/template/html/v2&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nf">InitRedisClient</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Ping</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">).</span><span class="nf">Err</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`failed to connect redis`</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">engine</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">html</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="s">`./views`</span><span class="p">,</span><span class="w"> </span><span class="s">`.html`</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">fiber</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">Views</span><span class="p">:</span><span class="w"> </span><span class="nx">engine</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">app</span><span class="p">.</span><span class="nf">Listen</span><span class="p">(</span><span class="s">`:8080`</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Pada variable <code>engine := html.New</code>(<code>./views</code>, <code>.html</code>) berguna untuk mengkonfigurasi direktori dan ekstensi file untuk me-render halaman web. Pada kasus ini kita gunakan direktori ./views dan ekstensi .html.</p>
 <p>Lalu, apa itu Pub/Sub ?</p>
 <p>Pub/Sub, singkatan dari “Publish/Subscribe”, merupakan pola dalam pemrograman yang memungkinkan pengiriman pesan dari satu komponen aplikasi ke satu atau lebih komponen lain tanpa keduanya terhubung langsung atau memiliki ketergantungan satu sama lain.</p>
 <p>Pub/Sub biasanya sering digunakan pada notifikasi, aplikasi chat, dan lain sebagainya.</p>
@@ -1121,100 +1121,100 @@ body {
 <p>Ketika sebuah pesan di publish ke channel, Redis akan mengirimkan pesan tersebut ke semua client yang “subscribe” ke channel tersebut. [^1]</p>
 <p>Jadi, sudah paham kan apa itu Pub/Sub.</p>
 <p>Sekarang mari kita lanjutkan, tulis kode berikut pada file <code>controller/home.go</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">controller</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;fmt&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;log&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;pub-sub-go/configs&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;github.com/gofiber/fiber/v2&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">HomePage</span><span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">message</span> <span class="o">:=</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;User dengan IP %v mengakses website&#34;</span><span class="p">,</span> <span class="nx">c</span><span class="p">.</span><span class="nf">IP</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">err</span> <span class="o">:=</span> <span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Publish</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">configs</span><span class="p">.</span><span class="nx">REDIS_CHANNEL_NOTIFICATION</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">message</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="p">).</span><span class="nf">Err</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`Error:`</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="nx">c</span><span class="p">.</span><span class="nf">Render</span><span class="p">(</span><span class="s">`index`</span><span class="p">,</span> <span class="nx">fiber</span><span class="p">.</span><span class="nx">Map</span><span class="p">{})</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Kode di atas akan mem-publish sebuah pesan ke channel bernama <code>notifikasi</code> kemudian me-render halaman web pada file <code>index.html</code>. Bila diperhatikan, cukup menulis nama file nya saja (<code>index</code>) tanpa menulis ekstensi-nya karena sudah kita konfigurasi pada file <code>main.go</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">controller</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;log&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;pub-sub-go/configs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;github.com/gofiber/fiber/v2&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">HomePage</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;User dengan IP %v mengakses website&#34;</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">IP</span><span class="p">())</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Publish</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">configs</span><span class="p">.</span><span class="nx">REDIS_CHANNEL_NOTIFICATION</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">message</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">).</span><span class="nf">Err</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`Error:`</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">Render</span><span class="p">(</span><span class="s">`index`</span><span class="p">,</span><span class="w"> </span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Map</span><span class="p">{})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Kode di atas akan mem-publish sebuah pesan ke channel bernama <code>notifikasi</code> kemudian me-render halaman web pada file <code>index.html</code>. Bila diperhatikan, cukup menulis nama file nya saja (<code>index</code>) tanpa menulis ekstensi-nya karena sudah kita konfigurasi pada file <code>main.go</code>.</p>
 <p>Balik ke file main.go, Panggil fungsi di atas untuk dijadikan handler/controller pada endpoint <code>/:</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">app</span> <span class="o">:=</span> <span class="nx">fiber</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">Views</span><span class="p">:</span> <span class="nx">engine</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">})</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">app</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span><span class="s">`/`</span><span class="p">,</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">HomePage</span><span class="p">)</span>
-</span></span></code></pre></div><p>Lanjut ke file <code>controller/notification.go</code>, tulis kode berikut:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">controller</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;bufio&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;fmt&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;log&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;pub-sub-go/configs&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;github.com/gofiber/fiber/v2&#34;</span>
-</span></span><span class="line"><span class="cl"> <span class="s">&#34;github.com/valyala/fasthttp&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">Notification</span><span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Content-Type&#34;</span><span class="p">,</span> <span class="s">&#34;text/event-stream&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Cache-Control&#34;</span><span class="p">,</span> <span class="s">&#34;no-cache&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Connection&#34;</span><span class="p">,</span> <span class="s">&#34;keep-alive&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Transfer-Encoding&#34;</span><span class="p">,</span> <span class="s">&#34;chunked&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="nx">c</span><span class="p">.</span><span class="nf">Context</span><span class="p">().</span><span class="nf">SetBodyStreamWriter</span><span class="p">(</span><span class="nx">fasthttp</span><span class="p">.</span><span class="nf">StreamWriter</span><span class="p">(</span><span class="kd">func</span><span class="p">(</span><span class="nx">w</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Writer</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">pubSub</span> <span class="o">:=</span> <span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Subscribe</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">,</span> <span class="nx">configs</span><span class="p">.</span><span class="nx">REDIS_CHANNEL_NOTIFICATION</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="k">defer</span> <span class="nx">pubSub</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">   <span class="k">for</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">     <span class="nx">msg</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">pubSub</span><span class="p">.</span><span class="nf">ReceiveMessage</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">     <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">       <span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`pubSub.ReceiveMessage(CTX)`</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">       <span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`message:`</span><span class="p">,</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">Payload</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">     <span class="p">}</span>
-</span></span><span class="line"><span class="cl">      
-</span></span><span class="line"><span class="cl">     <span class="nx">fmt</span><span class="p">.</span><span class="nf">Fprintf</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;data: %s\n\n&#34;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">Payload</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">     <span class="nx">err</span> <span class="p">=</span> <span class="nx">w</span><span class="p">.</span><span class="nf">Flush</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">     <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">       <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Error while flushing: %v. Closing http connection.\n&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">       <span class="k">break</span>
-</span></span><span class="line"><span class="cl">     <span class="p">}</span>
-</span></span><span class="line"><span class="cl">   <span class="p">}</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="kc">nil</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Kode di atas berfungsi untuk mengirimkan pesan yang didapat dari men-subscribe ke channel bernama notifikasi secara terus menerus atau streaming, dengan metode Server-Sent Event.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">app</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">fiber</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">Views</span><span class="p">:</span><span class="w"> </span><span class="nx">engine</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nx">app</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span><span class="s">`/`</span><span class="p">,</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">HomePage</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>Lanjut ke file <code>controller/notification.go</code>, tulis kode berikut:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">controller</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;bufio&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;log&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;pub-sub-go/configs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;github.com/gofiber/fiber/v2&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="s">&#34;github.com/valyala/fasthttp&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">Notification</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Content-Type&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;text/event-stream&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Cache-Control&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;no-cache&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Connection&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;keep-alive&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Transfer-Encoding&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;chunked&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nf">Context</span><span class="p">().</span><span class="nf">SetBodyStreamWriter</span><span class="p">(</span><span class="nx">fasthttp</span><span class="p">.</span><span class="nf">StreamWriter</span><span class="p">(</span><span class="kd">func</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Writer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">pubSub</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS</span><span class="p">.</span><span class="nf">Subscribe</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">,</span><span class="w"> </span><span class="nx">configs</span><span class="p">.</span><span class="nx">REDIS_CHANNEL_NOTIFICATION</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="k">defer</span><span class="w"> </span><span class="nx">pubSub</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nx">msg</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pubSub</span><span class="p">.</span><span class="nf">ReceiveMessage</span><span class="p">(</span><span class="nx">configs</span><span class="p">.</span><span class="nx">RDS_CTX</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">       </span><span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`pubSub.ReceiveMessage(CTX)`</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">       </span><span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`message:`</span><span class="p">,</span><span class="w"> </span><span class="nx">msg</span><span class="p">.</span><span class="nx">Payload</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Fprintf</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;data: %s\n\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="nx">msg</span><span class="p">.</span><span class="nx">Payload</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">w</span><span class="p">.</span><span class="nf">Flush</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">       </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Error while flushing: %v. Closing http connection.\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">       </span><span class="k">break</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">}))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">nil</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Kode di atas berfungsi untuk mengirimkan pesan yang didapat dari men-subscribe ke channel bernama notifikasi secara terus menerus atau streaming, dengan metode Server-Sent Event.</p>
 <p>Jadi, apa itu Server-Sent Event?</p>
 <p>Server-Sent event (SSE) adalah sebuah teknologi web yang memungkinkan server untuk mengirimkan data secara asynchronous kepada client melalui protokol HTTP. SSE dirancang khusus untuk memfasilitasi komunikasi satu arah dari server ke client, yang bukan merupakan permintaan cepat dari klien.</p>
 <p>Pada controller di atas, SSE ditandai dengan pengaturan header dengan memanggil fungsi <code>c.Set(&quot;Content-Type&quot;, &quot;text/event-stream&quot;), dan c.Context().SetBodyStreamWriter(...).</code></p>
 <p>Lanjut ke file <code>main.go</code>, kita panggil controller di atas untuk digunakan pada endpoint <code>/notifikasi</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">app</span> <span class="o">:=</span> <span class="nx">fiber</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">Views</span><span class="p">:</span> <span class="nx">engine</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">})</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">app</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span><span class="s">`/`</span><span class="p">,</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">HomePage</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nx">app</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span><span class="s">`/notification`</span><span class="p">,</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">Notification</span><span class="p">)</span>
-</span></span></code></pre></div><p>Sip, controller untuk “publish” dan “subscribe” sudah jadi.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">app</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">fiber</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="nx">Views</span><span class="p">:</span><span class="w"> </span><span class="nx">engine</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nx">app</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span><span class="s">`/`</span><span class="p">,</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">HomePage</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nx">app</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span><span class="s">`/notification`</span><span class="p">,</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">Notification</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>Sip, controller untuk “publish” dan “subscribe” sudah jadi.</p>
 <h2 id="step-5---membuat-tampilan-halaman-web">Step 5 - Membuat tampilan halaman web</h2>
 <p>Kita akan membuat tampilan yang sederhana saja, yang penting bisa menampilkan notifikasi.</p>
 <p>Tulis kode berikut pada file <code>views/index.html</code>:</p>
@@ -1247,13 +1247,13 @@ body {
 </span></span></code></pre></div><p>Syntax <code>{{ .title }}</code> akan me-render nilai dari key title dari object yg kita buat pada controller dari file <code>controller/home.go</code>.</p>
 <p>Kemudian di bagian script nya kita menginisialisasikan source dari Event (SSE) yang merujuk ke endpoint <code>/notification</code>.</p>
 <p>Bisa kita lihat pada baris kode ini:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">source</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">EventSource</span><span class="p">(</span><span class="s">&#34;/notification&#34;</span><span class="p">);</span>
-</span></span></code></pre></div><p>Kemudian kita bisa buat fungsi untuk handle event <code>onmessage</code> pada object <code>source</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">source</span><span class="p">.</span><span class="nx">onmessage</span> <span class="p">=</span> <span class="nf">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span> <span class="o">...</span> <span class="p">}</span>
-</span></span></code></pre></div><h2 id="step-6---testing-aplikasi">Step 6 - Testing aplikasi</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">const</span><span class="w"> </span><span class="nx">source</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">new</span><span class="w"> </span><span class="nf">EventSource</span><span class="p">(</span><span class="s">&#34;/notification&#34;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><p>Kemudian kita bisa buat fungsi untuk handle event <code>onmessage</code> pada object <code>source</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">source</span><span class="p">.</span><span class="nx">onmessage</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="step-6---testing-aplikasi">Step 6 - Testing aplikasi</h2>
 <p>Jika sudah, selanjutnya mari kita jalankan aplikasinya dengan perintah</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span> <span class="nx">run</span> <span class="nx">main</span><span class="p">.</span><span class="k">go</span>
-</span></span></code></pre></div><p>Kemudian buka 2 browser ke alamat <code>localhost:8000</code>.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="k">go</span><span class="w">
+</span></span></span></code></pre></div><p>Kemudian buka 2 browser ke alamat <code>localhost:8000</code>.
 
 <figure class="my-6 text-center">
   <img 
@@ -1880,7 +1880,7 @@ document.addEventListener('keydown', function(e) {
 
     
     <div class="font-bold text-teal-600 dark:text-teal-400 mb-4 md:mb-0">
-      <h3 class="text-xl font-bold mb-4">Absolute Computer</h3>
+      <h3 class="text-xl font-bold mb-4">Cleanic Computer</h3>
       <nav class="flex flex-col gap-2 text-slate-300 font-medium">
         <a href="/about/" class="hover:text-teal-400 transition-colors flex items-center">
           <i class="fas fa-info-circle w-5 mr-2"></i> About
@@ -1925,7 +1925,7 @@ document.addEventListener('keydown', function(e) {
         <i class="fab fa-github text-lg w-5 h-5 flex items-center justify-center"></i>
       </a>
     </div>
-    <p class="text-slate-400">© 2025 <a href="https://gitkodachi.github.io/" class="hover:text-teal-400 font-semibold transition-colors">Absolute Computer</a>
+    <p class="text-slate-400">© 2025 <a href="https://gitkodachi.github.io/" class="hover:text-teal-400 font-semibold transition-colors">Cleanic Computer</a>
       · Made with ❤️ using <a href="https://gohugo.io" class="hover:text-teal-400 transition-colors" target="_blank" rel="noopener">Hugo 0.147.0</a>
     </p>
   </div>
