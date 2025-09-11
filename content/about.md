@@ -1,16 +1,16 @@
 ---
-title: "Tentang Kami - Absolute Comp"
+title: "Tentang Kami - Cleanic Computer"
 date: 2025-06-27
 layout: "single"
 type: "page"
 meta_description: "Kenali tim Ocatacat Kode - platform edukasi teknologi yang menyediakan tutorial pemrograman, tips coding, dan resources gratis untuk developer"
 ---
 
-## 🚀 Tentang Octacat Kode
+## 🚀 Tentang Cleanic Computer
 
 Payung Kode adalah platform edukasi teknologi yang didedikasikan untuk membantu developer dari berbagai tingkat keahlian - dari pemula yang baru memulai perjalanan coding hingga profesional yang ingin mengasah skills terbaru.
 
-![Tim Absolute Comp](/images/authors/octocat.png)
+![Tim Cleanic Computer](/images/authors/octocat.png)
 
 ## 🎯 Visi Kami
 
