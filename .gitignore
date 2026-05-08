@@ -1,0 +1,11 @@
+# Dependensi
+node_modules/
+.hugo_build.lock
+
+# Hasil build (biar repo ringan)
+public/
+resources/_gen/
+
+# OS & Logs
+.DS_Store
+*.log
